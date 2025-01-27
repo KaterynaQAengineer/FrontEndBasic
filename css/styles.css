@@ -1,0 +1,166 @@
+/* 1. Селектор елементу*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* 2. Селектор класу */
+.header-container  div {
+    width: 1180px; 
+    margin: 0 auto; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+}
+/* 3. Селектор ідентифікатор*/
+#main {
+    width: 1180px;
+    margin: 20px auto;
+}
+/* 4. Селектор нащадків*/
+.header-container strong {
+    margin: 0 auto;
+        text-align: center;
+        font-size: 24px;
+        color: #004b60;
+}
+/* 5. Дочірній селектор*/
+section > h2 {
+    font-size: 20px;
+        margin-bottom: 20px;
+}
+/* 6. Сестринський селектор*/
+h2 + p {
+    color: #555;
+    font-size: 18px;
+}
+/* 7. Селектор атрибуту */
+a[target="_blank"] {
+    color: #007bff;
+    text-decoration: underline;
+}
+/* 8. Універсальний селектор */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/*стилізація порад*/
+.tips {
+    padding: 10px;
+        text-align: center;
+        border: 1px solid #ccc;
+        margin-bottom: 20px;
+}
+
+.tip-container {
+    display: flex;
+        justify-content: space-between;
+        gap: 20px;
+}
+
+.tip-container > div {
+    flex: 1;
+        text-align: left;
+}
+
+.tip-container img {
+    width: 100%;
+        max-width: 300px;
+        height: 200px;
+}
+
+ul {
+    font-size: 16px;
+        color: #555;
+        list-style-type: none;
+        padding: 0;
+}
+
+ul > li {
+    margin-bottom: 10px;
+}
+
+/*стилізація Сніданків*/
+.breakfast {
+    padding: 10px;
+        text-align: center;
+        border: 1px solid #ccc;
+        margin-bottom: 20px;
+}
+.breakfast .image-container {
+    display: flex;
+        justify-content: space-between;
+        gap: 20px;
+}
+.breakfast img {
+    width: 100%;
+        max-width: 400px;
+        height: 550px;
+}
+
+/*Стилізація Обіди і Вечері*/
+.lunch-dinner {
+    padding: 10px;
+        text-align: center;
+        border: 1px solid #ccc;
+        margin-bottom: 20px;
+}
+.menu-list {
+    font-size: 18px;
+        text-align: left;
+        line-height: 1.6;
+        margin-bottom: 20px;
+        list-style-type: none;
+}
+.meal-pictures {
+    display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 20px
+}
+.meal-pictures figure {
+    flex: 1;
+        max-width: 300px;
+        text-align: center;
+}
+.meal-pictures img {
+    width: 100%;
+        height: auto;
+        border-radius: 8px;
+}
+#custom-image {
+    width: 100%;
+        height: 400px;
+        border-radius: 8px;
+}
+.meal-pictures figcaption {
+    font-size: 16px;
+        color: #007bff;
+        margin-top: 10px;
+}
+.meal-pictures a {
+    text-decoration: none;
+        color: inherit;
+}
+/*Footer*/
+.footer {
+    background-color: #f8f8f8;
+        padding: 20px;
+        text-align: center;
+        font-family: Arial, sans-serif
+}
+.footer p {
+    margin: 0;
+        font-size: 16px;
+        color: #333;
+}
+.social-links {
+    margin: 15px 0;
+}
+.social-links a {
+    margin: 0 10px;
+}
+.social-links img {
+    width: 32px; height: 32px;
+}
